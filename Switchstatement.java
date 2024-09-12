@@ -1,14 +1,11 @@
-package branching;
-
 import java.util.Scanner;
-
 public class Switchstatement {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Masukkan nomor hari (1 - 7): ");
-        int nomorHari = input.nextInt();
-
+        int nomorHari;
+        System.out.print("Masukkan nomor diantara 1 sampai 7: ");
+        nomorHari = scanner.nextInt();
         String namaHari = "";
 
         switch (nomorHari) {
@@ -41,13 +38,12 @@ public class Switchstatement {
                 break;
 
             default:
-                System.out.println("Masukkan nomor hari (1 - 7)");
+                System.out.println("Masukkan nomor diantara 1 sampai 7");
                 System.exit(0);
         }
 
         System.out.println("Hari : " + namaHari);
-
-        input.close();
+        scanner.close();
     }
 
 }
