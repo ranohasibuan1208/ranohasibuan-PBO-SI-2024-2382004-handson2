@@ -1,27 +1,19 @@
-package unaryoperator;
-
 public class Unaryoperator {
     public static void main(String[] args) {
         int x = 10;
-        int y = -5;
+        // Pre-Increment
+        System.out.println(++x);
+        // Post-Increment
+        System.out.println(x++);
+
+        int y = 10;
+        // Pre-Decrement
+        System.out.println(--y);
+        // Post-Decrement
+        System.out.println(y--);
+
+        // Logical NOT
         boolean isTrue = true;
-//increment
-        System.out.println("x awal: " + x);
-        System.out.println("++x: " + ++x); //pre increment
-        System.out.println("x++ awal: " + x++);// post increment
-        System.out.println("x awal: " + x);
-//decrement
-        System.out.println("x awal: " + x);
-        System.out.println("--x: " + --x);//pre decrement
-        System.out.println("x-- awal: " + x--);//post decremet
-        System.out.println("x awal: " + x);
-//unary plus dan minus
-        System.out.println("=x: " + x);
-        System.out.println("-y: " + y);
-
-        //logical not
-        System.out.println("isTrue: " + !isTrue);
-
-
+        System.out.println(!isTrue);
     }
 }

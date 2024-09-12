@@ -1,15 +1,8 @@
-package Ternaryoperator;
-
 public class Ternaryoperator {
     public static void main(String[] args) {
-        int nilai = 80;
-        String hasil = (nilai >= 75) ? "Lulus" : "Tidak Lulus";
+        int nilaiLulusMinimum = 70;
+        int nilaiMahasiswa = 70; // contoh nilai mahasiswa
+        String hasil = nilaiMahasiswa >= nilaiLulusMinimum ? "Lulus" : "Tidak Lulus";
         System.out.println(hasil);
-
-        if (nilai > 75) {
-            System.out.println("Kamu lulus");
-        } else {
-            System.out.println("Tidak Lulus");
-        }
     }
 }

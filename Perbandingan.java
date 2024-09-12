@@ -2,25 +2,19 @@ package binaryoperator;
 
 public class Perbandingan {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 5;
-
-        boolean hasilSamaDengan = a == b;
-        System.out.println("a == b :" +hasilSamaDengan);
-
-        boolean hasilTidakSamaDengan = a != b;
-        System.out.println("a != b :" +hasilTidakSamaDengan);
-
-        boolean hasilLebihDari = a > b;
-        System.out.println("a > b :" +hasilLebihDari);
-
-        boolean hasilKurangDari = a < b;
-        System.out.println("a < b :" +hasilKurangDari);
-
-        boolean hasilLebihDariSamaDengan = a >= b;
-        System.out.println("a >= b :" +hasilLebihDariSamaDengan);
-
-        boolean hasilKurangDariSamaDengan = a <= b;
-        System.out.println("a <= b :" +hasilKurangDariSamaDengan);
+        int nilai = 70;
+        int minimumKelulusan = 60;
+        // sama dengan
+        System.out.println(nilai == minimumKelulusan);
+        // tidak sama dengan
+        System.out.println(nilai != minimumKelulusan);
+        // lebih besar dari
+        System.out.println(nilai > minimumKelulusan);
+        // lebih kecil dari
+        System.out.println(nilai < minimumKelulusan);
+        // lebih besar sama dengan
+        System.out.println(nilai >= minimumKelulusan);
+        // lebih kecil sama dengan
+        System.out.println(nilai <= minimumKelulusan);
     }
 }
